@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Helen Zhang</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.python {width: 80%; background-color: #f44336;}
+.javascript {width: 80%; background-color: #f44336;}
+.cpp {width: 80%; background-color: #f44336;}
+.c {width: 70%; background-color: #f44336;}
+.latex {width: 90%; background-color: #f44336;}
+.r {width: 50%; background-color: #f44336;}
+.racket {width: 60%; background-color: #f44336;}
+
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about_me" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
+    <a href="#hobby" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hobbies</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Gallery</a>
+    <a href="./files/resume.pdf" download class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#about_me" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+    <a href="#hobby" class="w3-bar-item w3-button w3-padding-large">Hobbies</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large">School</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+    <a href="./files/resume.pdf" download class="w3-bar-item w3-button w3-padding-large">Resume</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">HELEN ZHANG</h1>
+  <p class="w3-xlarge">Computer Science Student at the University of Waterloo</p>
+  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+</header>
+
+<!-- About Me -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="about_me">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About Me</h1>
+      <h5 class="w3-padding-32">My name is Helen Zhang (张易成), a third year Computer Science student at the University of Waterloo.
+        I have a strong passion for technology and a deep interest in full stack development and mathematics. 
+        I have a solid foundation in various programming languages, data structures, and algorithms.
+        In my free time, I like to experiment with new technologies and work on personal projects that challenge me and help me expand my skill set.
+        Besides school, I also have a lot of hobbies that I enjoy doing in my free time. Feel free to checkout those on my website as well!
+      </h5>
+      <h1>My Skills</h1>
+
+        <p>C++</p>
+        <div class="container">
+        <div class="skills cpp"></div>
+        </div>
+
+        <p>HTML/Javascript/CSS</p>
+        <div class="container">
+        <div class="skills javascript"></div>
+        </div>
+
+        <p>Python</p>
+        <div class="container">
+        <div class="skills python"></div>
+        </div>
+
+        <p>C</p>
+        <div class="container">
+        <div class="skills c"></div>
+        </div>
+
+        <p>LaTeX</p>
+        <div class="container">
+        <div class="skills latex"></div>
+        </div>
+
+        <p>R</p>
+        <div class="container">
+        <div class="skills r"></div>
+        </div>
+
+        <p>Racket</p>
+        <div class="container">
+        <div class="skills racket"></div>
+        </div>
+
+
+      <!-- <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Hobby -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="hobby">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Hobbies</h1>
+      <h5 class="w3-padding-32">Rubiks Cube</h5>
+      <p class="w3-text-grey">I started playing Rubiks Cube in Grade 7 and started speedsolving during covid period. 
+        I used to practice a lot back in 2020 but then stopped because of school.
+         I also enjoy collecting Rubiks Cubes.
+        My current personal record for solving 3x3 is 17.55 seconds.
+      </p>
+      <h5 class="w3-padding-32">Watch Anime</h5>
+      <p class="w3-text-grey">I like watching anime during spare time. Below is a not complete anime list of mine.
+      </p>
+      <h5 class="w3-padding-32">Sports</h5>
+      <p class="w3-text-grey">I always enjoy playing sports and learning new sports.<br>
+        My favourite sports: badminton, kendo, skateboarding, table tennis<br>
+        Sports that I want to learn: snowboarding, surfing, fencing
+    </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Projects -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="projects">
+    <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="img/biquadris.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Biquadris</h3>
+          <p class="project-details">
+            An object-oriented two-player competitive Tetris game written in C++ which composed of 6 levels, 6 types of blocks and a variety of special trigger events.
+          </p>
+          <a href="https://github.com/helenzhangyc/Biquadris" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="img/ecoFriendly.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Eco Friendly Social Platform</h3>
+          <p class="project-details">
+            An eco-friendly social platform where people can share pictures of them planting trees, auction off homemade eco-friendly products, and discuss the ways to make our Earth a better place.
+          </p>
+          <a href="https://github.com/helenzhangyc/eco_friendly_social_platform" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="img/calculator.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Mod 7 Calculator</h3>
+          <p class="project-details">
+            A Modulus Calculator written in Python (Pygame) which performs modulus calculations using Euclidean Algorithm.
+            Project idea was originated from a first year algebra course.
+          </p>
+          <a href="https://github.com/helenzhangyc/mod-7-calculator" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+  </div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
